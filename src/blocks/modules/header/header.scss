@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 46px;
     &__item {
         display: flex;
         justify-content: space-between;
@@ -15,6 +16,7 @@
         color: $simple-color;
         transition: 0.3s ease;
         font-weight: 500;
+        letter-spacing: 0.075rem;
         &:hover{
             color: $active-color;
         }
@@ -25,7 +27,7 @@
     position: relative;
     width: 2.5rem;
     height: 2.5rem;
-    margin-left: 82px;
+    margin-left: 80px;
     &__button {
         width: 2.5rem;
         height: 2.5rem;

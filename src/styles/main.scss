@@ -40,19 +40,106 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    padding-bottom: 100px;
+    &__image{
+        position: absolute;
+    }
+    &__tomato{
+        right: 121px;
+        bottom: 15px;
+    }
+    &__cucumber{
+        top:0;
+        left: 690px;
+    }
+    &__pepper{
+        left: 40px;
+        top: 395px;
+    }
+    &__bob{
+        left: 15px;
+        top: 795px;
+    }
+    &__bob2{
+        left: 0;
+        top: 815px;
+
+    }
+    &__bob3{
+        left: 40px;
+        top: 870px;
+
+    }
+    &__avocado{
+        top: 50px;
+        right: 0px;
+    }
 }
 .main{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     &-text{
         flex: 0 0 40%;
+        padding-top: 190px;
         &__description{
             font-size: 1.12rem;
             line-height: 1.51;
             margin-top: 60px;
             margin-bottom: 77px;
 
+        }
+    }
+    &-visual{
+        box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($simple-color,$alpha);
+        border-radius:100%;
+        padding: 53px;
+        position: relative;
+        &__image{
+            border-radius: 100%;
+            border: 1px solid rgba($simple-color,$alpha);
+            padding: 21px;
+            img {
+                box-shadow: 15px 48px 42px 0px rgba($simple-color,$alpha);
+                border-radius: 100%;
+            }
+        }
+        &__btn{
+            background-color: transparent;
+            border: none;
+            color: rgba($simple-color,0.8);
+            text-align: left;
+            position: absolute;
+            span {
+                color: rgba($simple-color,1);
+                display: block;
+                margin-top: 6px;
+            }
+            &::before{
+                content: "";
+                display: block;
+                width: 11px;
+                height: 11px;
+                border-radius: 100%;
+                background-color: $simple-color;
+                box-shadow: 0 0 0 4px #fff, 0 0 0 5px $simple-color;
+            }
+            &:focus{
+                outline: none;
+                &::before{
+                    background-color: $active-color;
+                    box-shadow: 0 0 0 4px #fff, 0 0 0 5px $active-color;
+                }
+            }
+        }
+        &__01{
+            top: 45px;
+            left: 58px;
+            &::before{
+                top: 22px;
+                left: 91px;
+            }
         }
     }
 }
