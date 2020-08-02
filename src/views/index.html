@@ -23,6 +23,7 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="styles/main.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap');
@@ -34,8 +35,8 @@
             <div class="wrapper">
                 <div class="main">
                     <div class="main-text">
-                        <h1 class="title">Здоровая еда -<br><span>это здорово</span>!</h1>
-                        <div class="ml_7_6">
+                        <h1 class="title">Здоровая еда -<br><span>это просто</span>!</h1>
+                        <div class="ml">
                         <p class="main-text__description">Сеть магазинов полезных продуктов питания, производство которых основано на&nbsp;принципах и&nbsp;стандартах органического чистых продуктов</p>
                         <a href="" class="btn">Перейти в каталог</a>
                         </div>
@@ -46,6 +47,12 @@
                         </div>
                         <button class="main-visual__btn main-visual__01">
                             Авокадо <span>134 руб</span>
+                        </button>
+                        <button class="main-visual__btn main-visual__02">
+                            Картофель <span>169 руб</span>
+                        </button>
+                        <button class="main-visual__btn main-visual__03">
+                            Томаты <span>215 руб</span>
                         </button>
                     </div>
                 </div>
@@ -62,37 +69,422 @@
                 <h2 class="title">Что мы<br><span>предлагаем</span></h2>
                 <p class="section-stock__text">Органика — это целостная система производства по-настоящему чистой, натуральной и полезной продукции</p>
                 <div class="slider">
-                    <div class="slider-item slider-milk">
-                        <div class="slider-text">
-                            <h3 class="slider-text__title">Молочные продукты</h3>
-                            <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
-                            <a href="" class="slider-text__link">Подробнее</a>
+                    <div class="slider-child">
+                        <div class="slider-item slider-hover slider-milk">
+                            <div class="slider-text">
+                                <h3 class="slider-text__title">Молочные продукты</h3>
+                                <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                                <a href="" class="slider-text__link">Подробнее</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="slider-item slider-pasta">
-                        <div class="slider-text">
-                            <h3 class="slider-text__title">Бакалея</h3>
-                            <p class="slider-text__description"></p>
-                            <a href="" class="slider-text__link"></a>
+                    <div class="slider-child">
+                        <div class="slider-item slider-hover slider-pasta">
+                            <div class="slider-text">
+                                <h3 class="slider-text__title">Бакалея</h3>
+                                <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                                <a href="" class="slider-text__link">Подробнее</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="slider-item slider-meat">
-                        <div class="slider-text">
-                            <h3 class="slider-text__title">Мясо, птица</h3>
-                            <p class="slider-text__description"></p>
-                            <a href="" class="slider-text__link"></a>
+                    <div class="slider-child">
+                        <div class="slider-item slider-hover slider-meat">
+                            <div class="slider-text">
+                                <h3 class="slider-text__title">Мясо, птица</h3>
+                                <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                                <a href="" class="slider-text__link">Подробнее</a>
+                            </div>
                         </div>
                     </div>
-                
+                    <div class="slider-child">
+                        <div class="slider-item slider-hover slider-pasta">
+                            <div class="slider-text">
+                                <h3 class="slider-text__title">Бакалея</h3>
+                                <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                                <a href="" class="slider-text__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-child">
+                        <div class="slider-item slider-hover slider-meat">
+                            <div class="slider-text">
+                                <h3 class="slider-text__title">Мясо, птица</h3>
+                                <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                                <a href="" class="slider-text__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-child">
+                        <div class="slider-item slider-hover slider-meat">
+                            <div class="slider-text">
+                                <h3 class="slider-text__title">Мясо, птица</h3>
+                                <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                                <a href="" class="slider-text__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
         </section>
-       
-        <main>
-    
-        </main>
+        <section class="section-advantege">
+            <div class="wrapper">
+                <h2 class="title">В чём наша<br><span>уникальность</span></h2>
+                <div class="box-advantege">
+                    <div class="box-advantege__item">
+                        <div class="ml">
+                            <p class="box-advantege__text">Мы полностью контролируем весь цикл производства – от поля до прилавка за счет собственной серьезной материальной и научной базы. Наш подход направлен на высокие технологии и достижения научного прогресса</p>
+                        </div>
+                    </div>
+                    <div class="box-advantege__item">
+                        <ul class="box-advantege__list">
+                            <li class="box-advantege__list--item box-advantege__list--health">
+                                <span></span>Здоровье
+                            </li>
+                            <li class="box-advantege__list--item box-advantege__list--traditions">
+                                <span></span>Традиции
+                            </li>
+                            <li class="box-advantege__list--item box-advantege__list--taste">
+                                <span></span>Вкус
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-news">
+            <div class="wrapper">
+                <h2 class="title">Наши <span>новинки</span></h2>
+                <p class="section-news__description">Будь в тренде с современым миром, и будь здоров вместе с нами</p>
+                <div class="slider">
+                    <div class="slider-child">
+                        <div class="slider-item">
+                            <div class="slider-thumb">
+                                <img class="slider-thumb__image" src="../img/stock/bottle.png" alt="Milk">
+                            </div>
+                            <div class="slider-info">
+                                <h3 class="slider-info__title">Молоко топлёное</h3>
+                                <p class="slider-info__description">Молоко Healthy food топленеое мдж&nbsp;4%&nbsp;500гр</p>
+                                <p class="slider-info__price">159 руб/шт</p>
+                                <div class="slider-footer">
+                                    <div class="slider-count">
+                                        <span class="slider-count__minus"></span>
+                                        <input type="text" class="slider-count__number" value="1"/>
+                                        <span class="slider-count__plus"></span>
+                                        </div>
+                                        <button class="btn slider-footer__btn">в корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-child">
+                            <div class="slider-item">
+                                <div class="slider-thumb">
+                                    <img class="slider-thumb__image" src="../img/stock/egg.png" alt="Egg">
+                                </div>
+                                <div class="slider-info">
+                                    <h3 class="slider-info__title">Яйцо перепелиное</h3>
+                                    <p class="slider-info__description">QEGG Яйцо перепелиное 20шт</p>
+                                    <p class="slider-info__price">94 руб/упак</p>
+                                    <div class="slider-footer">
+                                        <div class="slider-count">
+                                            <span class="slider-count__minus"></span>
+                                            <input type="text" class="slider-count__number" value="1"/>
+                                            <span class="slider-count__plus"></span>
+                                            </div>
+                                            <button class="btn slider-footer__btn">в корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-child">
+                                <div class="slider-item">
+                                    <div class="slider-thumb">
+                                        <img class="slider-thumb__image" src="../img/stock/chicken.png" alt="Chicken">
+                                    </div>
+                                    <div class="slider-info">
+                                        <h3 class="slider-info__title">Куриное филе Оссобуко</h3>
+                                        <p class="slider-info__description">Куриное филе Оссобуко (Ангус) охл скин. В&nbsp;вакумной уапаковке</p>
+                                        <p class="slider-info__price">1009 руб/кг</p>
+                                        <div class="slider-footer">
+                                            <div class="slider-count">
+                                                <span class="slider-count__minus"></span>
+                                                <input type="text" class="slider-count__number" value="1"/>
+                                                <span class="slider-count__plus"></span>
+                                                </div>
+                                                <button class="btn slider-footer__btn">в корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-child">
+                                    <div class="slider-item">
+                                        <div class="slider-thumb">
+                                            <img class="slider-thumb__image" src="../img/stock/chicken.png" alt="Chicken">
+                                        </div>
+                                        <div class="slider-info">
+                                            <h3 class="slider-info__title">Куриное филе Оссобуко</h3>
+                                            <p class="slider-info__description">Куриное филе Оссобуко (Ангус) охл скин. В&nbsp;вакумной уапаковке</p>
+                                            <p class="slider-info__price">1009 руб/кг</p>
+                                            <div class="slider-footer">
+                                                <div class="slider-count">
+                                                    <span class="slider-count__minus"></span>
+                                                    <input type="text" class="slider-count__number" value="1"/>
+                                                    <span class="slider-count__plus"></span>
+                                                    </div>
+                                                    <button class="btn slider-footer__btn">в корзину</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-child">
+                                        <div class="slider-item">
+                                            <div class="slider-thumb">
+                                                <img class="slider-thumb__image" src="../img/stock/chicken.png" alt="Chicken">
+                                            </div>
+                                            <div class="slider-info">
+                                                <h3 class="slider-info__title">Куриное филе Оссобуко</h3>
+                                                <p class="slider-info__description">Куриное филе Оссобуко (Ангус) охл скин. В вакумной уапаковке</p>
+                                                <p class="slider-info__price">1009 руб/кг</p>
+                                                <div class="slider-footer">
+                                                    <div class="slider-count">
+                                                        <span class="slider-count__minus"></span>
+                                                        <input type="text" class="slider-count__number" value="1"/>
+                                                        <span class="slider-count__plus"></span>
+                                                        </div>
+                                                        <button class="btn slider-footer__btn">в корзину</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="section-catalog">
+            <div class="wrapper">
+                <h2 class="title">Каталог</h2>
+                <p class="section-catalog__text">Еда которая заботится о вашей фигуре</p>
+                <ul class="tab">
+                    <li class="tab-item">
+                        <a class="tab-link" href="">Молочные продукты</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="">Бакалея</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="">Мясо, птица</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="">Детям</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="">Овощи и фрукты</a>
+                    </li>
+                </ul>
+                <div class="catalog">
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/bottle.png" alt="Milk">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Молоко топлёное</h3>
+                            <p class="catalog-info__description">Молоко Healthy food топленеое мдж&nbsp;4%&nbsp;500гр</p>
+                            <p class="catalog-info__price">159 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/yogurt-1.png" alt="Yogurt">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Йогурт с черникой</h3>
+                            <p class="catalog-info__description">Йогурт Healthy food  с черникой, питьевой&nbsp;1,5%,&nbsp;750 г</p>
+                            <p class="catalog-info__price">89 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/cottage-cheese.png" alt="Cottage-cheese">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Творог</h3>
+                            <p class="catalog-info__description">Творог Healthy food Рассыпчатый 9%&nbsp;350&nbsp;г
+                            </p>
+                            <p class="catalog-info__price">216 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/mozzarella.png" alt="Mozarella">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Моцарелла</h3>
+                            <p class="catalog-info__description">Моцарелла Healthy food 45%,&nbsp;0.125&nbsp;кг</p>
+                            <p class="catalog-info__price">359 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/butter.png" alt="Butter">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Масло сливочное</h3>
+                            <p class="catalog-info__description">Масло Healthy food сливочное 82,5%,&nbsp;200г
+                            </p>
+                            <p class="catalog-info__price">139 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/yogurt-2.png" alt="Yogurt">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Йогурт термостатный</h3>
+                            <p class="catalog-info__description">Йогурт Healthy food термостатный с&nbsp;фруктово-ягодным&nbsp;2,5%,&nbsp;165 г
+                            </p>
+                            <p class="catalog-info__price">159 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/cheese.png" alt="Cheese">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Сыр</h3>
+                            <p class="catalog-info__description">Сыр  Healthy food Сливочный 45%&nbsp;200г
+                            </p>
+                            <p class="catalog-info__price">559 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-thumb">
+                            <img class="catalog-thumb__image" src="../img/stock/sauce.png" alt="Sause">
+                        </div>
+                        <div class="catalog-info">
+                            <h3 class="catalog-info__title">Соус для салата</h3>
+                            <p class="catalog-info__description">Соус для салата Healthy food пикантный&nbsp;4%&nbsp;70гр
+                            </p>
+                            <p class="catalog-info__price">59 руб/шт</p>
+                            <div class="catalog-footer">
+                                <div class="catalog-count">
+                                    <span class="catalog-count__minus"></span>
+                                    <input type="text" class="catalog-count__number" value="1"/>
+                                    <span class="catalog-count__plus"></span>
+                                    </div>
+                                    <button class="btn catalog-footer__btn">в корзину</button>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                <div class="refresh">
+                    <button class="refresh__btn">Загрузить ещё</button>
+                </div>
+                
+            </div>
+        </section>
         @@include("../blocks/modules/footer/footer.html")
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+
+          $(document).ready(function() {
+			$('.slider-count__minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.slider-count__plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+        </script>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>
