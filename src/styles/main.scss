@@ -479,7 +479,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
-    padding-bottom: 160px;
+    padding-bottom: 100px;
     &__text{
         font-size: 1.5rem;
         line-height: 1.5;
@@ -567,7 +567,7 @@ body {
         margin-bottom: 14px;
         &__image{
             position: absolute;
-            height: 204px;
+            max-height: 204px;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
@@ -642,25 +642,94 @@ body {
         border: none;
         text-transform: uppercase;
         color: rgba($simple-color,0.8);
-        letter-spacing: 1.4px;
+        letter-spacing: 0.06rem;
         background-color: transparent;
         transition: 0.2s ease;
         padding: 10px 10px 10px 38px;
         position: relative;
         &::before{
             content: "";
-            width: 25px;
-            height: 25px;
+            display: block;
+            width: 1.56rem;
+            height: 1.56rem;
             background-image: url("../img/refresh@2x.png");
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: 25px 25px;
+            background-size: 1.56rem 1.56rem;
             position: absolute;
-            top:5px;
+            top: calc(50% - 0.78rem);
             left: 0;
+            opacity: 0.8;
         }
         &:hover{
             color: $simple-color;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.delivery{
+    background-image: url("../img/bg-6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    padding-bottom: 160px;
+}
+.box-delivery{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    &-item{
+        flex: 0 0 48%;
+        &:last-child{
+            flex: 0 0 41%;
+        }
+    }
+    &__text{
+        font-size: 1.12rem;
+        line-height: 1.5;
+        margin-bottom: 28px;
+    }
+    &__link{
+        color: $simple-color;
+        border-bottom: 1px solid $simple-color;
+        text-decoration: none;
+    }
+    &__sale{
+        color: $active-color;
+    }
+}
+.pay-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    &__item{
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin-right: 30px;
+        opacity: 0.4;
+        &:hover{
+            opacity: 1;
+        }
+        &--mc{
+            background-image: url("../img/mc-card.png");
+            width:53px;
+            height: 32px;
+        }
+        &--visa{
+            background-image: url("../img/visa-card.png");
+            width:74px;
+            height: 23px;
+        }
+        &--paypal{
+            background-image: url("../img/paypal.png");
+            width:87px;
+            height: 24px;
         }
     }
 }
