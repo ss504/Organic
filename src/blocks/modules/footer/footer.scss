@@ -1,0 +1,94 @@
+.footer{
+    border-top: 1px solid $simple-color;
+    margin-top: 75px;
+    .logo{
+        width: 179px;
+        height: 48px;
+        margin-top: 10px;
+    }
+}
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    align-items: top;
+   
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 66.4%;
+        &--middle{
+            flex-shrink: 0;
+        }
+    }
+    &-list{
+        list-style-type: none;
+        font-size: 1.125rem;
+        &__item{
+            margin-bottom: 1.62rem;
+        }
+        &__link{
+            text-decoration: none;
+            color: $simple-color;
+            font-size: 1.125rem;
+            &:hover{
+                color: $active-color;
+            }
+        }
+        &__tel{
+            font-size: 1.67rem;
+            margin-bottom: 2.06rem;
+
+        }
+    }
+}
+.box-footer-social{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    &__vk{
+        background-image: url(../../../img/vk.svg);
+        background-size: 23px 14px;
+    }
+    &__insta{
+        background-image: url(../../../img/instagram.svg);
+        background-size: 18px 18px;
+    }
+    &__facebook{
+        background-image: url(../../../img/facebook.svg);
+        background-size: 9px 18px;
+    }
+    &__link{
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        border: 2px solid $simple-color;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.8;
+        transition: 0.2s ease;
+    }
+}
+.box-copyright{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    &__text{
+        color: #a6a8a4;
+    }
+    &__link{
+        color: #27300f;
+        text-decoration: none;
+        transition: 0.2s ease;
+        opacity: 0.6;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &__copy{
+        color: #a6a8a4;;
+    }
+}

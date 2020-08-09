@@ -23,6 +23,9 @@
             color: $active-color;
         }
     }
+    @media (max-width: 1350){
+        max-width: 1140px;
+    }
 }
 
 .header-card {
@@ -30,6 +33,9 @@
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 80px;
+    @media (max-width: 1350){
+        margin-left: 40px;
+    }
     &__button {
         width: 2.5rem;
         height: 2.5rem;
@@ -56,14 +62,22 @@
     width: 120px;
     height: 32px;
     margin-right: 120px;
+    background-size: contain;
+    @media (max-width: 1350){
+        margin-right: 50px;
+    }
 }
 .nav {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-
-    &__link{
+    &__item{
         margin-right: 48px;
+        @media (max-width: 1350){
+            margin-right: 30px;
+        }
+    }
+    &__link{
         text-decoration: none;
         color: $simple-color;
         transition: 0.3s ease;
